@@ -1,0 +1,3 @@
+<?php
+echo "Zawartość strony";
+ ?>
