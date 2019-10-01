@@ -25,17 +25,18 @@
     $napis = <<< ETYKIETA
     Twoje imię: $name<br>
     Miasto: $city<hr>
-    ETYKIETA;
+ETYKIETA;
     echo $napis;
     echo <<< E
     pi papapa parapa<hr>
-    E;
+E;
     //skladnia nowdoc
         echo <<< 'E'
         Nowdoc<br>
         $napis
         Heredoc<hr>
-        E;//nie mozna w nim uzywac zmiennych
+E;
+//nie mozna w nim uzywac zmiennych
     $city = "Gniezno";
     echo "Nazwa zmiennej: \$city, wartość: $city";
     echo 'Nazwa zmiennej: $city, wartość: ',$city;
