@@ -1,7 +1,7 @@
 <?php
 $potega = 2**10;
 echo $potega;
-//operatory bitowe: and $, or |, not `, xor ^, >>, <<
+//operatory bitowe: and &, or |, not `, xor ^, >>, <<
 $x= 0b1010; //10
 echo '<br>',$x;
 $x = $x >> 1; //101
