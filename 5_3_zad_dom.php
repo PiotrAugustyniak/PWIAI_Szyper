@@ -9,14 +9,14 @@ Formularz dodaj z drugiego pliku o nazwie form.php
 
 <?php
 include('form.php');
-if(!empty($_GET['text']) && !empty($_GET['number']) && !empty($_GET['textarea'])){
+if(!empty($_POST['text']) && !empty($_POST['number']) && !empty($_POST['textarea'])){
 $text = $_POST['text'];
 $number = $_POST['number'];
 $textarea = $_POST['textarea'];
 
-$textNew = trim('text');
-$numberNew = trim('number');
-$textAreaNew = substr(nl2br(trim('textarea'), 0, 50));
+$textNew = trim($text);
+$numberNew = trim($number);
+$textAreaNew = substr(nl2br(trim($textarea)), 0, 50);
 echo $textNew,"<br>";
 echo $numberNew,"<br>";
 echo $textAreaNew,"<br>";
