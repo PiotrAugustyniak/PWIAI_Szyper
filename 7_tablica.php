@@ -137,10 +137,21 @@ echo "<hr>";
 //funkcja1 zamiana liter na małe
 //funkcja2 sortowanie niemalejaco
 //funkcja3 wyswietlenie danych po zamianie (pierwsza itera ma byc duza);
-function funkcja1(&$tab){
+$imiona= array('piotr', 'Anna', 'krzysztof','Zuzanna');
+function zamianaNaMale(&$tab){
+foreach ($tab as &$value) {
+  $value =strtolower($value);
+  }
+}
+function sortowanie(&$tab){
+  rsort($tab);
+}
+function wypisz($tab){
 foreach ($tab as $value) {
-  echo strtolower($tab);
+  echo $value, "<br>";
 }
 }
-funkcja1($tab);
+zamianaNaMale($imiona);
+sortowanie($imiona);
+wypisz($imiona);
  ?>

@@ -18,11 +18,14 @@ osobe z rodziny i wyswietli w liscie punktowanej w formacie:
     <?php
     if (!empty($_POST['iloscDzieci']) && $_POST['iloscDzieci']>0 && $_POST['iloscDzieci']<71){
       $ilosc = $_POST['iloscDzieci'];
-      echo "<form method=\"post\" action=\"test.php\">";
+      echo "<form method=\"post\" action=\"wynik.php\">";
       for ($i=1; $i <= $ilosc; $i++) {
-        echo "<input type=\"number\" name=\"wiek . $i\"><br>";
+        echo "<input type=\"number\" name=\"wiek$i\"><br>";
+        if($i==$ilosc){
+          echo "<input type=\"number\" name=\"ileJest\" value=\"$i\"><br>";
+        }
       }
-      echo "<input type=\"submit\" value=\"Zatwierdz\" action=\"test.php\"><br>";
+      echo "<input type=\"submit\" value=\"Zatwierdz\" action=\"wynik.php\"><br>";
       echo "</form>";
     }else{
      ?>
