@@ -15,19 +15,23 @@ osobe z rodziny i wyswietli w liscie punktowanej w formacie:
     <title></title>
   </head>
   <body>
-    <form method="post">
-      <input type="number" name="iloscDzieci"><br>
-      <input type="submit" name="guzior" value="Submit">
-    </form>
     <?php
     if (!empty($_POST['iloscDzieci']) && $_POST['iloscDzieci']>0 && $_POST['iloscDzieci']<71){
       $ilosc = $_POST['iloscDzieci'];
-      echo "<form>";
+      echo "<form method=\"post\" action=\"test.php\">";
       for ($i=1; $i <= $ilosc; $i++) {
         echo "<input type=\"number\" name=\"wiek . $i\"><br>";
       }
+      echo "<input type=\"submit\" value=\"Zatwierdz\" action=\"test.php\"><br>";
       echo "</form>";
-    }
+    }else{
      ?>
+     <form method="post">
+       <input type="number" name="iloscDzieci"><br>
+       <input type="submit" name="guzior" value="Submit">
+     </form>
+     <?php
+}
+      ?>
   </body>
 </html>
