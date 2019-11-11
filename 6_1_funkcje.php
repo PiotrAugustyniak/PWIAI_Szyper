@@ -13,6 +13,11 @@ osobe z rodziny i wyswietli w liscie punktowanej w formacie:
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style>
+      input[name="ileJest"]{
+        visibility: hidden;
+      }
+    </style>
   </head>
   <body>
     <?php
