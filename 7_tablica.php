@@ -154,4 +154,15 @@ foreach ($tab as $value) {
 zamianaNaMale($imiona);
 sortowanie($imiona);
 wypisz($imiona);
+
+$number = array(1, 2, 3, 4);
+var_dump($number);// index typ wartosc
+echo "<br>";
+print_r($number); // index wartosc
+
+echo "<pre>";
+print_r($number); // ladniejszy sposob wyswietlenia
+echo "</pre>";
+
+
  ?>
