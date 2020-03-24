@@ -14,9 +14,8 @@ class User{
   $this->name = $name;
   $this->surname = $surname
   }
-
   public function show(){
-    
+
   }
 }
 
@@ -26,5 +25,5 @@ echo $person->name;
 $person->setName("Krystyna");
 echo $person->name;
 echo "<br>Imię". $person->getName();
-$person->setUser("Anna","Kowalska")
+$person->setUser("Anna","Kowalska");
  ?>
